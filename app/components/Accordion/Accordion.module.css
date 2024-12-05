@@ -1,0 +1,10 @@
+.accordion {
+    width: 1000px;
+    margin: auto;
+    background-color: #b6b6b6;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    display: flex;
+    
+}
