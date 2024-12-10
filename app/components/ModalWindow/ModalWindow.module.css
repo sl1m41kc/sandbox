@@ -1,0 +1,61 @@
+.blackout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    
+    z-index: -1;
+}
+
+.blackout.open {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal {
+    max-width: 400px;
+    background-color: #bebebe;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+    cursor: auto;
+}
+
+.modal.open {
+    transform: scale(1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #525252;
+}
+
+.close_button {
+    cursor: pointer;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    color: #525252;
+    transition: color 0.1s ease-in-out;
+}
+
+.text {
+    color: #292929;
+}
+
+.close_button:hover {
+    color: #000000;
+}
